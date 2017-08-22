@@ -1,0 +1,200 @@
+*{
+	padding:0;
+	margin:0 auto;
+}
+
+
+#content{
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:center;
+	padding:1%;
+	background:#EFE8E1;
+}
+#content span{
+	display:inline-block;
+	width:98%;
+	font-size:14px;
+	font-weight:bold;
+	height:35px;
+	line-height:35px;
+	text-align:left;
+	
+}
+
+#content table{
+	width:98%;
+	background:#fff;
+	
+}
+
+#content table th{
+	border-bottom:1px solid #ECE7E1;
+}
+
+#content table th{
+	font-size:14px;
+	font-weight: 400;
+}
+
+#content table tr{
+	
+	height:30px;
+}
+
+#content #show{
+	height:90px;
+
+}
+#show td{
+
+	border-bottom:1px solid #ECE7E1;
+	width:600x;
+	
+}
+
+
+#show td div{
+	padding-left:20px;
+	display:inline-block;
+	height:65px;
+	float:left;
+}
+
+#show td div img{
+	width:65px;
+	
+	height:65px;
+}
+#nm{
+	width:300px;
+}
+#show td #wName{
+	overflow-y:hidden;
+	font-size:12px;
+	display:inline-block;
+	height:65px;
+	border:none;
+	padding-top:23px;
+	width:300px;
+	color:#5F9CE1;
+}
+#show #wp{
+	text-align:center;
+}
+#show #wp input{
+	width:80px;
+	text-align:center;
+	height:65px;
+	line-height: 65px;
+	border:none;
+	color:#444;
+}
+#show #wq{
+	text-align:center;
+}
+#show #wq input{
+	text-align:center;
+	height:65px;
+	font-size:12px;
+	font-weight:300;
+	line-height: 65px;
+	border:none;
+	width:80px;
+	color:#444;
+}
+
+#show #pq{
+	text-align:center;
+}
+#show #pq input{
+	text-align:center;
+	height:65px;
+	font-size:14px;
+	font-weight:600;
+	line-height: 65px;
+	border:none;
+	color:red;
+	width:80px;
+	
+}
+#total{
+	width:100%;
+	
+	text-align:right;
+}
+
+#total td{
+text-align:center;
+
+width:90px;;
+height:40px;
+font-size:13px;	
+}
+#total td input{
+	color:red;
+	font-size:15px;
+	width:60px;
+	border:none;
+	font-weight:600;
+}
+
+#place{
+	background:#fff;
+	height:40px;
+	padding-top:5px;
+}
+#place input{
+	height:30px;
+	width:500px;
+	border:1px solid #888;
+	padding-left:15px;
+	line-height: 30px;
+	color:#444;
+}
+
+#sub{
+	margin-top:10px;
+	background:#fff;
+	height:60px;
+	padding-top:15px;
+	
+}
+#sub input{
+	float:right;
+	height:40px;
+	width:130px;
+	
+	
+	
+	background:#E5DBD1;
+	color:#444;
+	
+}
+
+
+#foot{
+	border-top:1px solid #ccc;
+	color:#777;
+	text-align:center;;
+	width:980px;
+	font-size:14px;
+	height:50px; padding-bottom:20px;
+}
+#foot span{
+	margin-left:20px;
+	margin-right:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,227 @@
+
+*{
+	padding:0;
+	margin:0 auto;
+}
+
+#content{
+	height:550px;
+}
+#con_top ul{
+	padding-left:16%;
+	list-style-type:none;
+	width:100%;
+	height:30px;
+	margin-top:3px;
+	margin-bottom:3px;
+
+}
+#con_top ul li{
+	color:#3F7FD2;
+	float:left;
+	line-height:30px;
+	font-size:14px;
+	
+	width:80px;
+	text-align:center;
+	
+	height:30px;
+	border-right:1px solid #ccc;
+}
+#con_top ul #no_bord{
+	border-right:none;
+}
+#con_bottom{
+	width:100%;
+	
+}
+#he_bottom table {
+	width:90%;
+	
+	margin-top:10px;
+	margin-right:5%;
+}
+#bot_th table tr{
+	background:#eee;
+	height:30px;
+	font-size:13px;
+	width:100%;}
+#bot_th table tr td{
+	width:150px;
+	border:1px solid #fff;
+	text-align:center;
+}
+#bot_th table tr  #show{
+	width:50%;
+	
+}
+
+#d1{
+	height:400px;
+	width:980px;
+	z-index:1;
+	display:none;
+	position: absolute;
+}
+#d2{
+		width:980px;
+	z-index:1;
+	display:none;
+	
+	height:400px;
+	position: absolute;
+}
+#d3{
+		width:980px;
+	z-index:1;
+	display:none;
+	
+	height:400px;
+	position: absolute;
+}
+#d4{	width:980px;
+		display:none;
+	z-index:1;
+	position: absolute;
+}
+#d5{
+		width:980px;
+		display:none;
+	z-index:1;
+	position: absolute;
+}
+
+#content  table{
+	width:90%;
+
+	margin-right:5%;
+}
+#content .tb{
+	border:1px solid #aaa;
+	margin-bottom:2px;
+}
+#content  table .the_id{
+	background:#EFE9E1;
+	
+	height:25px;
+	width:100%;
+}
+#content  table .the_id td{
+	font-size:13px;
+	color:#444;
+}
+#content  table .the_id td input{
+	border:none;
+	background:#EFE9E1;
+}
+#content  .ch .ch1{
+	width:50%;
+}
+#content  table tr td img{
+	width:75px;
+	height:75px;
+	
+}
+#content  table tr td span{
+	margin-top:3px;
+	margin-left:20px;
+	display:inline-block;
+	width:75px;
+	height:75px;
+	
+	background:blue;
+}
+#content  table tr td textarea{
+	width:200px;
+	background:transparent;
+	height:75px;
+	color:#444;
+	padding-left:5px;
+	padding-top:30px;
+	border:none;
+	margin-left:8px;
+	overflow-y:hidden;
+	
+}
+#content table .ch{
+	
+	height:75px;
+}
+#content  table .ch td{
+	
+	height:75px;
+	
+}
+#content  table .ch td input{
+	border:none;
+	height:75px;
+	
+}
+#content  table .ch .ch2{
+	width:17%;
+
+}
+#content  table .ch .ch2 input{
+	background:transparent;
+	
+	color:red;
+	font-size:16px;
+	padding-left:35%;
+	font-weight: bold;
+}
+
+#content  table .ch .ch3{
+	width:17%;
+}
+#content  table .ch .ch3 input{
+	background:transparent;
+	color:#444;
+	font-size:13px;
+	padding-left:27%;
+}
+#content  table .ch .ch4{
+	background:transparent;
+	height:75px;
+	width:17%;
+	text-align:center;
+}
+#content  table .ch .ch4 div{
+	width:50%;
+	height:75px;
+}
+
+#content  table .ch .ch4 input{
+	width:100%;
+	border:none;
+	background:transparent;
+	margin-top:1px;
+	height:25px;
+	color:#3F7FD2;
+	font-size:13px;
+}
+
+#bot{
+		color:#444;
+		woidth:980px;
+	margin-top:10px;
+	text-align:center;
+	
+}
+#bot #pa a{
+	color:#444;
+	text-decoration:none;
+}
+
+#foot{
+		margin-top:10px;
+	border-top:1px solid #ccc;
+	color:#777;
+	text-align:center;;
+	width:980px;
+	font-size:14px;
+	height:50px; padding-bottom:20px;
+}
+#foot span{
+	margin-left:20px;
+	margin-right:20px;
+}

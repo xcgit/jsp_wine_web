@@ -1,0 +1,90 @@
+#content #top{
+	border:1px double #999;
+	width:980px;
+	height:120px;
+}
+#content #top th{
+	background:#ccc;
+	width:980px;
+	height:20px;
+	color:#444;
+	font-size:12px;
+	text-align:left;
+	text-indent:30px;
+	font-weight: normal;
+}
+
+#content #top tr td{
+	text-indent: 30px;
+	color:#444;
+	font-size:13px;
+}
+tr #im{
+	text-indent: 30px;
+	
+}
+#content #top td img{
+	width:75px;
+	height:80px;
+	
+}
+#content #bottom{
+	width:980px;
+	height:400px;
+}
+#content #bottom p{
+	margin-top:20px;
+	font-size:12px;
+	color:#444;
+	
+}
+#content #bottom textArea{
+	width:600px;
+	height:150px;
+	text-indent:24px;
+	color:#444;
+	padding-top:10px;
+	overflow-y:hidden;
+	margin-left:150px;
+	border:1px solid #ccc;
+}
+
+#count{
+	font-size:13px;
+	text-indent: 600px;
+	margin-top:8px;
+	color:#444;
+}
+#count span{
+	color:red;
+}
+#btn{
+	width:980px;
+	height:35px;
+}
+#btn input{
+	margin-left:620px;
+	width:120px;
+	height:35px;
+	color:#444;
+	font-size:13px;
+	background:#fff;
+	border-radius:5px;
+	border:1px solid #ccc;
+}
+
+#foot{
+   
+   	margin-top:20px;
+	border-top:1px solid #ccc;
+	color:#777;
+	text-align:center;;
+	width:980px;
+	font-size:14px;
+	height:50px; padding-bottom:20px;
+}
+#foot span{
+	margin-left:20px;
+	margin-right:20px;
+}
+

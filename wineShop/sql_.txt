@@ -1,0 +1,288 @@
+create database wineShop;
+use wineShop;
+
+create table classify_wine (
+	cId varchar(32) not null,
+	cName varchar(50) PRIMARY KEY
+	
+)TYPE=InnoDB ;
+
+
+
+
+insert into classify_wine value ('1','黄酒');
+insert into classify_wine value ('2','啤酒');
+insert into classify_wine value ('3','白酒');
+insert into classify_wine value ('4','葡萄酒');
+insert into classify_wine value ('5','保健酒');
+
+
+
+
+
+
+编号 名称 分类  价格 产地   口感  规格 度数  品牌 图片 
+
+评价在建表
+create table wine(
+	wId   varchar(32) not null,
+	wName nvarchar(80) not null,
+	wClassify varchar(50) ,
+	wPrice int not null,
+	wPlace nvarchar(60),
+	wTaste nvarchar(15),
+	wFormat nvarchar(10),
+	wDegree int,
+	wBrand nvarchar(15),
+	wPicture nvarchar(80),
+	primary key(wId,wClassify),
+	foreign key(wClassify) references classify_wine(cName) ON DELETE  RESTRICT  ON UPDATE CASCADE
+	 
+)TYPE=InnoDB;
+
+alter table wine modify column wPrice float(8,2);
+alter table wine modify column wDegree float(8,2);
+alter table wine alter column wPlace set default '其他';
+alter table wine alter column wTaste set default '其他香型';
+
+3白酒
+
+insert into wine value('2017001','四川郎酒红花郎10年 十年 陈酿 酱香53度500ml 白酒','白酒',269,'四川','酱香型','500ml/瓶装',53,'郎酒','picture/3_1.jpg');
+
+insert into wine value('2017002','GOME酒窖 53度飞天茅台500ml 酱香型白酒','白酒',1239.00,'贵州','酱香型','500ml/瓶装',53,'茅台','picture/3_2.jpg');
+
+
+insert into wine value('2017003','50度 古井贡酒青瓷大坛 2500ml 大坛白酒','白酒',239.00,'安徽','浓香型','2500ml/瓶装',50,'古井贡','picture/3_3.jpg');
+
+insert into wine value('2017004','金六福老五星52度500ml浓香型纯粮食高度白酒礼盒 五粮液出品(1 一支)','白酒',198.00,'四川','浓香型','500ml/瓶装',52,'金六福','picture/3_4.jpg');
+
+insert into wine value('2017005','沱牌岁月酒6 52度 浓香型 500ml','白酒',69.00,'河北','浓香型','500ml/瓶装',52,'沱牌','picture/3_5.jpg');
+
+
+insert into wine (wId,wName,wClassify,wPrice,wFormat,wDegree,wBrand,wPicture)value('2017006','42度洋河蓝色经典海之蓝480ml*6 绵柔国产江苏白酒','白酒',699.00 , '480ml/瓶装',42,'GOME CELLAR' ,'picture/3_6.jpg');
+
+
+1黄酒  无度数
+
+insert into wine (wId,wName,wClassify,wPrice,wPlace,wTaste,wFormat,wBrand,wPicture)value('2017011','越杭永兴酒厂 十年陈花雕酒','黄酒',42,'浙江','清爽型','500ml/瓶装','越杭','picture/1_1.jpg');
+
+
+insert into wine (wId,wName,wClassify,wPrice,wPlace,wTaste,wFormat,wBrand,wPicture)value('2017012','塔牌五年青瓷花雕','黄酒',55,'浙江','清爽型','500ml/瓶装','塔牌','picture/1_2.jpg');
+
+
+insert into wine (wId,wName,wClassify,wPrice,wPlace,wTaste,wFormat,wBrand,wPicture)value('2017013','塔牌十年特醇绍兴酒 木盒花雕酒','黄酒',86,'浙江','清爽型','500ml/瓶装','塔牌','picture/1_3.jpg');
+
+insert into wine (wId,wName,wClassify,wPrice,wPlace,wTaste,wFormat,wDegree,wBrand,wPicture)value('2017014','塔牌丽春特型黄酒','黄酒',88,'浙江','清爽型','375ml/瓶装',12,'塔牌','picture/1_4.jpg');
+
+
+2啤酒
+
+insert into wine value('2017021','德国进口柏龙 教士 奥丁格','啤酒',45.00,'德国','清爽型','500ml*6',5,'教士','picture/2_1.jpg');
+
+
+insert into wine value('2017022','德国进口经典黑啤白啤组合装','啤酒',35.00,'德国','清爽型','500ml*6',4,'教士','picture/2_2.jpg');
+
+
+
+insert into wine value('2017023','德国进口爱士堡骑士小麦啤酒','啤酒',45.00,'美国','清爽型','500ml*24',6,'教士','picture/2_3.jpg');
+
+
+
+insert into wine value('2017024','德国慕尼黑PAULANER柏龙小麦啤酒','啤酒',118.00,'德国','清爽型','5l',6,'柏龙','picture/2_4.jpg');
+
+
+insert into wine value('2017025','德国慕尼黑普拉拿柏龙啤酒','啤酒',168.00,'德国','清爽型','500ml*24',6,'柏龙','picture/2_5.jpg');
+
+
+4葡萄酒
+ alter table wine modify column wDegree float(3,1);
+
+insert into wine value('2017041','拉菲传奇干红葡萄酒','葡萄酒',329.00,'法国','干红','750ml*6',12.5,'GOME CELLAR','picture/4_1.jpg');
+
+insert into wine value('2017042','慕隆城堡皮索塔醉梦红酒','葡萄酒',299.00,'法国','干红','750ml/瓶',12,'慕隆城堡','picture/4_2.jpg');
+
+insert into wine value('2017043','张裕百年星运赤霞珠干红葡萄酒','葡萄酒',288.00,'法国','干红','750ml*6',12,'张裕','picture/4_3.jpg');
+
+insert into wine value('2017044','解百纳干红葡萄酒','葡萄酒',38.00,'法国','干红','750ml/瓶',12.5,'GOME CELLAR','picture/4_4.jpg');
+
+5保健酒
+
+insert into wine value('2017051','同仁堂滋补养生酒秘制御酒','保健酒',360.00,'北京','其他','500ml',38,'同仁堂','picture/5_1.jpg');
+
+insert into wine value('2017052','张裕至宝特质三鞭酒','保健酒',109.00,'山东','其他','200ml*6',30,'张裕','picture/5_2.jpg');
+
+insert into wine value('2017053','劲牌追风活力','保健酒',99.00,'湖北','其他','500ml*6',32,'劲牌','picture/5_3.jpg');
+
+insert into wine value('2017054','中国劲酒','保健酒',259.00,'湖北','其他','5l/瓶',35,'劲牌','picture/5_4.jpg');
+
+
+
+
+select * from wine where wClassify="select cName from classify_wine where cId = 2";
+
+
+create table admin(aName varchar(32),aPaswrd varchar(32));
+
+
+create table user (uId varchar(32) primary key,uName varchar(32),uPassword varchar(32));
+
+insert into user value("u123","one","one");
+
+insert into user value("u456","two","two");
+
+insert into user value("u789","three","three");
+
+
+create table cart(c)
+
+购物车条目  条目id 用户id 酒id 酒数量 
+
+
+	
+create table cartItem(
+       	cQuantity  int(11) not null,
+  	c_w_Id varchar(32) not null,
+        c_u_Id varchar(32) not null,
+	index(cQuantity),
+	primary key(c_w_Id ,c_u_Id),
+	foreign key(c_w_Id) references wine(wId) ON DELETE  RESTRICT  ON UPDATE CASCADE,
+	foreign key(c_u_Id) references user(uId) ON DELETE  RESTRICT  ON UPDATE CASCADE 
+
+);
+ 
+
+insert into cartItem value("2","2017034","u123");
+insert into cartItem value("2","2017039","u123");
+insert into cartItem value("2","2017043","u123");
+
+insert into cartItem value("2","2017035","u123");
+insert into cartItem value("2","2017031","u123");
+
+insert into cartItem value("2","2017034","u456");
+
+
+
+
+
+ 查看 支付 取消 
+
+未付款 已付款 已发货 交易成功（未评论）  交易成功（已评论）    已取消
+   
+   1      2     3      4                       5                 0
+
+待付款  待发货  待收货
+   
+   1      2       3	
+
+
+ 
+
+
+订单id  用户id 酒id 酒数量 用户地址  支付状态  
+
+id 用户id  酒id  酒数量  地址 状态
+
+
+create table w_order(w_o_Id varchar(35) primary key,
+		w_user varchar(32),
+		w_wId varchar(32),
+		w_quant  int(11),
+		w_place varchar(60) not null,
+		state int(1) check(state in(1,2,3,4,0)),
+		INDEX (w_user),INDEX (w_wId),
+
+
+	foreign key(w_user) references user(uId) ON DELETE  RESTRICT  ON UPDATE CASCADE,
+	foreign key(w_wId) references wine(wId) ON DELETE  RESTRICT  ON UPDATE CASCADE
+	
+	
+);
+
+insert into w_order value("1232432444","u123","2017051",2,"qweqwe",1);
+insert into w_order value("1232432535","u123","2017052",2,"qweqwe",1);
+insert into w_order value("123243636","u123","2017053",2,"qweqwe",1);
+insert into w_order value("12324364437","u123","2017054",2,"qweqwe",1);	
+
+insert into w_order value("1232432434","u123","2017051",2,"qweqwe",2);
+insert into w_order value("1232432435","u123","2017052",2,"qweqwe",2);
+insert into w_order value("1232432436","u123","2017053",2,"qweqwe",2);
+insert into w_order value("1232432437","u123","2017054",2,"qweqwe",2);	
+
+insert into w_order value("1232432442","u123","2017044",2,"qweqwe",3);
+insert into w_order value("1232432445","u123","2017052",2,"qweqwe",3);
+insert into w_order value("1232432446","u123","2017053",2,"qweqwe",3);
+insert into w_order value("1232432447","u123","2017054",2,"qweqwe",3);	
+
+insert into w_order value("1232432465","u123","2017043",2,"qweqwe",4);
+insert into w_order value("1232432464","u123","2017052",2,"qweqwe",4);
+insert into w_order value("1232432463","u123","2017053",2,"qweqwe",4);
+insert into w_order value("1232432462","u123","2017054",2,"qweqwe",4);	
+
+insert into w_order value("1232432411","u123","2017043",2,"qweqwe",0);
+insert into w_order value("1232432412","u123","2017052",2,"qweqwe",0);
+insert into w_order value("1232432423","u123","2017053",2,"qweqwe",0);
+insert into w_order value("12324324232","u123","2017054",2,"qweqwe",0);
+
+insert into w_order value("1232432412221","0","2017052",2,"qweqwe",2);
+insert into w_order value("1232432224223","0","2017053",2,"qweqwe",2);
+insert into w_order value("1232432422232","0","2017054",2,"qweqwe",2);
+insert into w_order value("12324232411","0","2017043",2,"qweqwe",2);	
+
+提交订单后 购物车里的东西也跟着消失
+
+
+mysql里外键设置http://blog.csdn.net/ever_idea/article/details/50923721
+
+使用外键  两个表的被用的字段必须是有索引的  主键自动存在索引  
+
+
+
+客服表、
+
+create table customService (csId varchar(20) primary key,csName varchar(20),csPaswrd varchar(20));
+insert into customService value("21412","cs","cs");]
+
+评论
+
+create table comment (comm_Id varchar(20) primary key,comm_content nvarchar(300),comm_uId varchar(20),comm_wId varchar(20),comm_date varchar(30));
+
+insert into comment value("01","评价方未及时做出评价,系统默认好评!","0","2017011","2017年01月24日 18:40");
+insert into comment value("02","使用心得：不错，外包装比较精致，酒未饮，待饮后评价。","0","2017011","2017年04月02日 09:31");
+insert into comment value("03","使用心得：感觉价格不错，没有象其它涨价，去年的价，很满意","0","2017011","2017年03月10日 13:11");
+insert into comment value("04","哎呦，几天就到了，赞","0","2017011","2017年03月12日 10:38");
+insert into comment value("05","很好的卖家，下次还来惠顾，酒也是好酒，店家诚信，很及时的解决了问题。还会经常来惠顾","0","2017011","2017年02月22日 01:17");
+insert into comment value("06","比超市便宜多了，尝过，是好酒，正品酒，以后买酒不用出门，直接来国美和泰恒兴，既好又实惠","0","2017011","2017年02月22日 01:17");
+insert into comment value("07","哎呦，呵呵","0","2017011","2017年02月22日 01:17");
+
+insert into comment value("08","哎呦，呵呵上课了逛了逛看到那个李开复感觉法国卢浮宫的博客借个火结果可能更加开放时空裂痕刚刚看了打开两个都能看了你刚刚时空裂缝很开朗看过了上来看关键时刻两个结果考了几分顺利过关看来是看了个死了活该快乐打卡了就给你打开了个死了康乐；你噶大概了撒赶紧离开过经历啦升级更快了个价格","0","2017011","2017年02月22日 01:17");
+
+
+insert into comment value("09","评价方未及时做出评价,系统默认好评!","0","2017012","2017年01月24日 18:40");
+insert into comment value("10","使用心得：不错，外包装比较精致，酒未饮，待饮后评价。","0","2017011","2017年04月02日 09:31");
+insert into comment value("11","使用心得：感觉价格不错，没有象其它涨价，去年的价，很满意","0","2017012","2017年03月10日 13:11");
+insert into comment value("12","哎呦，几天就到了，赞","0","2017012","2017年03月12日 10:38");
+insert into comment value("13","很好的卖家，下次还来惠顾，酒也是好酒，店家诚信，很及时的解决了问题。还会经常来惠顾","0","2017011","2017年02月22日 01:17");
+insert into comment value("14","比超市便宜多了，尝过，是好酒，正品酒，以后买酒不用出门，直接来国美和泰恒兴，既好又实惠","0","2017012","2017年02月22日 01:17");
+insert into comment value("15","哎呦，呵呵","0","2017012","2017年02月22日 01:17");
+
+insert into comment value("16","哎呦，呵呵上课了逛了逛看到那个李开复感觉法国卢浮宫的博客借个火结果可能更加开放时空裂痕刚刚看了打开两个都能看了你刚刚时空裂缝很开朗看过了上来看关键时刻两个结果考了几分顺利过关看来是看了个死了活该快乐打卡了就给你打开了个死了康乐；你噶大概了撒赶紧离开过经历啦升级更快了个价格","0","2017012","2017年02月22日 01:17");
+
+
+insert into comment value("17","评价方未及时做出评价,系统默认好评!","0","2017013","2017年01月24日 18:40");
+insert into comment value("18","使用心得：不错，外包装比较精致，酒未饮，待饮后评价。","0","2017013","2017年04月02日 09:31");
+insert into comment value("19","使用心得：感觉价格不错，没有象其它涨价，去年的价，很满意","0","2017013","2017年03月10日 13:11");
+insert into comment value("20","哎呦，几天就到了，赞","0","2017013","2017年03月12日 10:38");
+insert into comment value("21","很好的卖家，下次还来惠顾，酒也是好酒，店家诚信，很及时的解决了问题。还会经常来惠顾","0","2017013","2017年02月22日 01:17");
+insert into comment value("22","比超市便宜多了，尝过，是好酒，正品酒，以后买酒不用出门，直接来国美和泰恒兴，既好又实惠","0","2017013","2017年02月22日 01:17");
+insert into comment value("23","哎呦，呵呵","0","2017012","2017年02月22日 01:17");
+
+insert into comment value("24","哎呦，呵呵上课了逛了逛看到那个李开复感觉法国卢浮宫的博客借个火结果可能更加开放时空裂痕刚刚看了打开两个都能看了你刚刚时空裂缝很开朗看过了上来看关键时刻两个结果考了几分顺利过关看来是看了个死了活该快乐打卡了就给你打开了个死了康乐；你噶大概了撒赶紧离开过经历啦升级更快了个价格","0","2017013","2017年02月22日 01:17");
+
+
+
+
+
+
+
+
+

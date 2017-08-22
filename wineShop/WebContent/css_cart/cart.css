@@ -1,0 +1,142 @@
+*{
+	padding:0;
+	margin:0 auto;
+}
+
+#content{
+	margin-top:30px;
+	margin-left:5%;
+	width:90%;
+	/* height:550px; */
+	background:#EFE8E1;
+	margin-bottom:10px;
+}
+
+#content table{
+	
+	text-align:left;
+	width:98%;
+	margin-left:1%;
+}
+
+#th {
+	display:block;
+	height:45px;
+	background:#EFE8E1;
+}
+#th td{
+	background:#EFE8E1;
+	display:block;
+	height:45px;
+	
+}
+
+table tr {
+	font-size:13px;
+	background:#fff;
+	display:block;
+	
+}
+table tr  .cbx{
+	padding-left:15px;
+}
+table tr td{
+		border:1px solid #fff;
+		padding-left:15px;
+}
+#im{
+	height:75px;
+	border:1px solid #fff;
+}
+#im div{
+	width:600x;
+	
+	float:left;
+}
+#im img{
+	height:75px;
+	width:65px;
+}
+#nm{
+	height:75px;
+	width:300px;
+	
+	float:left;
+}
+#nm textarea{
+	padding-top:30px;
+	height:75px;
+	width:300px;
+	overflow-y:hidden; 
+	color:#444;
+	border:none;
+}
+#total{
+	height:35px;
+}
+#total td{
+	height:35px;
+}
+#total_num{
+	font-size:20px;
+	
+}
+input{
+	margin-right:10px;
+	
+}
+table tr td{
+	color:#444;
+}
+
+.del input{
+	font-size:12px;
+	width:50px;
+	height:30px;
+	border:1px solid #E5DBD1;
+	background:#E5DBD1;
+	color:#444;
+}
+.dell input{
+	font-size:12px;
+	width:60px;
+	height:30px;
+	border:1px solid #E5DBD1;
+	background:#E5DBD1;
+	color:#444;
+}
+#sub{
+	height:45px;
+	text-align:right;
+}
+#sub input{
+	color:#444;
+	font-size:13px;
+	width:140px;
+	height:35px;
+	border:1px solid #E5DBD1;
+	background:#E5DBD1;
+}
+#foot{
+	border-top:1px solid #ccc;
+	color:#777;
+	text-align:center;;
+	width:980px;
+	font-size:14px;
+	height:50px; padding-bottom:20px;
+	
+ 
+}
+
+
+#foot span{
+	margin-left:20px;
+	margin-right:20px;
+}
+
+
+.container{position:relative;width:100%;
+	height:50px;
+	min-height:55%;}
+ 
+ #foot{height:50px;position:absolute;bottom:0px;left:0px;}

@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot'); /* IE9*/
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff') format('woff'), /* chrome、firefox */
+  url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+#content{
+	
+	height:400px;
+}
+
+#left{
+	/* border:1px solid #000; */
+	padding-top:3px;
+	padding-left:15%;
+	width:35%;
+	margin-right:15px;
+	float:left;
+	
+}
+#left img{
+	width:350px;
+	height:400px;
+	
+}
+#right{
+	margin-top:3px;
+	padding-top:30px;
+	width:45%;
+	height:370px;
+	padding-left:30px;
+	float:left;
+}
+#right table{
+	width:100%;
+	
+}
+
+#right table tr{
+	margin-right:20px;
+	display:block;
+	height:30px;
+	
+	
+}
+#right table tr td{
+	color:#444;
+	font-size:15px;
+	font-weight: 300;
+}
+#right table input{
+	color:#444;
+	border:none;
+	font-size:15px;
+	font-weight: 300;
+}
+
+#right table tr td #wName{
+	font-weight:500;
+	width:100%;
+	background:transparent;
+	margin-bottom:20px;
+	font-size:17px;
+	border:none;
+	text-align:left;
+}
+#right table tr td #wPrice{
+	background:transparent;
+	font-weight:bold;
+	color:red;
+	font-size:20px;
+	border:none;
+	text-align:left;
+}
+
+
+
+#t2 tr td input{
+	background:transparent;
+	width:50%;
+	
+}
+
+#q_l{
+	padding-left:3px;
+	width:20%;
+	height:30px;
+	float:left;
+	font-size:15px;
+	margin-bottom:10px;
+}
+#q_l p{
+	color:#444;
+	margin-top:8px;
+}
+#q_r{
+	padding-left:20px;
+	width:70%;
+	height:30px;
+	float:left;
+	
+	
+}
+
+#q_r div{
+	text-align:center;
+	width:120px;
+	border:1px solid #CCCCCC;
+	background:#EDEDED;
+}
+#q_r input{
+	
+	border:none;
+	text-align:center;
+	line-height:30px;
+	height:30px;
+	width:40px;
+	margin-left:5px;
+	margin-right:8px;
+	font-weight:500;
+	font-size:15px;
+}
+#q_r i{
+	font-weight:50;
+	background:#EDEDED;
+	font-size:20px;
+	text-align:center;
+	color:#444;
+
+}
+#sub input{
+	height:40px;
+	width:80px;
+	margin-top:30px;
+}
+
+#icon1{
+	color:#777
+}
+#add_cart{
+	border:none;
+	margin-left:-40px;
+	background:#E5DBD1;
+	color:#444;
+	
+	margin-right:100px;
+	
+}
+
+
+#buy_now{
+		border:none;
+	
+	background:#E5DBD1;
+	color:#444;
+	
+}
+
+#foot{
+   
+   	margin-top:20px;
+	border-top:1px solid #ccc;
+	color:#777;
+	text-align:center;;
+	width:980px;
+	font-size:14px;
+	height:50px; padding-bottom:20px;
+}
+#foot span{
+	margin-left:20px;
+	margin-right:20px;
+}
+
+#comment{
+	width:980px;
+	
+}
+
+#comm_top{
+	text-align:center;
+	font-size:14px;
+	color:#444;
+	line-height:45px;
+	
+	width:980px;
+	height:45px;
+	background:#DEDEDE;
+	
+}
+
+.pinglun{
+	width:980px;
+	/* background:#DE4F00; */
+	min-height:80px;
+	padding-top:10px;
+	border-top:1px solid #ccc;
+	
+}
+.pinglun .comm_uName{
+	padding-top:20px;
+	width:15%;
+	
+	padding-left:20px;
+	float:left;
+	
+}
+.pinglun .comm_content{
+	margin-left:5%;
+	font-size:15px;
+	width:75%;
+	float:left;
+}
+.pinglun .comm_content textArea{
+	width:655px;
+	overflow-y:hidden;
+	background:transparent;
+	height:55px;
+	border:none;
+}
+.pinglun .comm_date{
+	margin-top:10px;
+	font-size:12px;
+	color:#B0B4C8;
+}
+
+

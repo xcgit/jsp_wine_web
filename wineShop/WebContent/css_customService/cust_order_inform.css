@@ -1,0 +1,111 @@
+#content form table{
+	margin-top:30px;width:980px;
+	color:#444;
+	font-size:14px;
+	border:2px solid #eee;
+}
+
+#content form table .fir td{
+	background:#eee;
+	color:#444;
+	font-size:14px;
+	height:30px;
+	
+}
+
+#content form table tr .ad_re{
+	
+	width:150px;
+}
+#content form table tr .ad_re #s1{
+	float:left;
+	height:60px;
+	text-align:left;
+	width:40px;
+	border:none;
+	background:transparent;
+	line-height:60px;
+	
+}
+#a_r{
+	
+	float:left;
+	
+	height:62px;
+	width:60px;
+	text-align:center;
+	line-height:60px;
+	margin-left:42px;
+	background:#eee;
+	position: absolute;
+}
+
+#a_r  b{
+	
+	background:transparent;
+	display:block;
+	height:30px;
+	text-align:left;
+	width:60px;
+	font-weight:bold;
+	line-height:30px;
+	
+	font-size:18px;
+	
+}
+ #s2{
+	position: absolute;
+	top:0px;
+	left:0px;
+	border-bottom:2px solid #C2E2EF;
+}
+
+
+ #s3{
+ 
+ 	
+	text-align:center;
+	line-height:30px;
+	position: absolute;
+	top:32px;
+	left:0px;
+}
+
+#content form table tr td {
+	
+	text-indent: 20px;
+}
+#content form table tr td img{
+		margin-top:30px;
+}
+#content form table tr td textarea{
+	overflow-y:hidden; 
+	width:170px;
+	border:none;
+	line-height:80px;
+	height:80px;
+	background:transparent;
+	color:#444;
+	font-size:14px;
+}
+#pri{
+	border:none;
+	color:red;
+	width:80px;
+	font-size:16px;
+	font-style: italic;
+	background:transparent;
+}
+#content form table tr td input{
+	height:25px;
+}
+
+#content form table tr .pla input {
+	width:230px;
+}
+.btn input{
+	width:70px;
+	height:30px;
+	border:1px solid #777;
+	background:#eee;
+}
